@@ -1,10 +1,19 @@
 # LiveSplit Autosplitter for Call of Duty: Black Ops Zombies
 
-An automatic timer for Call of Duty: Black Ops Zombies speedrunning and high round attempts
+**Original Version**: [mrpotatosanta/bo1-zombies-autosplitter](https://github.com/mrpotatosanta/bo1-zombies-autosplitter)
 
-Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta)
+This Enhanced version adds:
+- Box Hit Error Tracker
+- Taken Vars Tracker
+- Reset Value
+- Reset Timer
+- Trap Timers
 
-# [Click Here to Download v3.9 (Latest Release)](https://github.com/mrpotatosanta/bo1-zombies-autosplitter/releases/download/v3.9/bo1-zombies-autosplitter-3.9.zip)
+Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta) |  Enhanced Version by oJumpy.
+
+# [Click Here to Download Enhanced Version v1.0](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.0/BO1.Potato.Enhanced-oJumpy.v1.0.asl)
+
+# [Click Here to Download Original by mrpotatosanta v3.9 (Latest Release)](https://github.com/mrpotatosanta/bo1-zombies-autosplitter/releases/download/v3.9/bo1-zombies-autosplitter-3.9.zip)
 
 > [!WARNING]
 > Sometimes, on the first map load, the `roundchange` memory value fails to initialize. When this happens, splits won't trigger because the value is unresponsive.
