@@ -11,7 +11,7 @@ This Enhanced version adds:
 
 Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta) |  Enhanced Version by oJumpy.
 
-# [Click Here to Download Enhanced Version v1.0](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.0/BO1.Potato.Enhanced-oJumpy.v1.0.asl)
+# [Click Here to Download Enhanced Version v1.1](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.1/BO1.Potato.Enhanced-oJumpy.v1.1.asl)
 
 # [Click Here to Download Original by mrpotatosanta v3.9 (Latest Release)](https://github.com/mrpotatosanta/bo1-zombies-autosplitter/releases/download/v3.9/bo1-zombies-autosplitter-3.9.zip)
 
