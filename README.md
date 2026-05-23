@@ -3,17 +3,21 @@
 **Original Version**: [mrpotatosanta/bo1-zombies-autosplitter](https://github.com/mrpotatosanta/bo1-zombies-autosplitter)
 
 This Enhanced version adds:
+- Off-Host Timer
 - Box Hit Error Tracker
 - Taken Vars Tracker
 - Reset Value
 - Reset Timer
 - Trap Timers
 
-Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta) |  Enhanced Version by oJumpy.
+Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta) |  Enhanced Version maintained by oJumpy.
 
-# [Click Here to Download Enhanced Version v1.1](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.1/BO1.Potato.Enhanced-oJumpy.v1.1.asl)
+> [!WARNING]
+> - **Fast Restart Off-Host**: If host uses a `fast_restart`, the off-host client timer will keep running. To reset and sync properly, host must use `map_restart`.
+> - **Spawn delay**: Off-Host and Host timers will have about a 9-ish second difference on spawn in due to load times. (could change this, add like an option for host players to start when fading in)
+> - **Flogger Timers Off-Host**: Flogger front/back trap timers are included but currently untested. They most likely won't work correctly, for off-host players.
 
-# [Click Here to Download Original by mrpotatosanta v3.9 (Latest Release)](https://github.com/mrpotatosanta/bo1-zombies-autosplitter/releases/download/v3.9/bo1-zombies-autosplitter-3.9.zip)
+# [Click Here to Download Enhanced Version v1.1](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.2/BO1.Master.Potato-Jumpy.v1.2.asl)
 
 > [!WARNING]
 > Sometimes, on the first map load, the `roundchange` memory value fails to initialize. When this happens, splits won't trigger because the value is unresponsive.
