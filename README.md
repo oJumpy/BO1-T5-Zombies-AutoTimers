@@ -3,21 +3,88 @@
 **Original Version**: [mrpotatosanta/bo1-zombies-autosplitter](https://github.com/mrpotatosanta/bo1-zombies-autosplitter)
 
 This Enhanced version adds:
-- Off-Host Timer
+- [Off-Host Timer using P2P](#bo1-zombies-tracker--p2p-timer-sync) 
 - Box Hit Error Tracker
 - Taken Vars Tracker
 - Reset Value
 - Reset Timer
 - Trap Timers
 
-Developed and maintained by [mrpotatosanta](https://www.twitch.tv/mrpotatosanta) |  Enhanced Version maintained by oJumpy.
+# [Click Here to Download Enhanced Version v1.3](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.2/BO1.Master.Potato-Jumpy.v1.3.asl)
+
+# BO1 Zombies Tracker & P2P Timer Sync
+
+A direct `dll` LiveSplit component for Call of Duty: Black Ops 1 Zombies. This component combines Error Monitor Trcaker with Peer-to-Peer (P2P) synchronization. 
+
+It allows co-op players to link their LiveSplit timers with the Host using a VPN (such as Radmin VPN or Hamachi) to synchronize split segments, game timing, and layouts.
+
+# [DIRECT DOWNLOAD `LiveSplit.BO1ZombiesTrackerSync.dll`](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.3/LiveSplit.BO1ZombiesTrackerSync.dll)
+
+## Requirements
+
+1. **Download [Livesplit](https://livesplit.org/downloads/)**
+2.  **Network Connection:** Both players must be on the same virtual network room (e.g., [Radmin VPN](https://www.radmin-vpn.com/) or [Hamachi](https://vpn.net/)).
+3. **Timing Method:** Ensure both LiveSplit instances are comparing against **Game Time** (Right-click LiveSplit -> *Compare Against* -> *Game Time*).
+
+---
+
+## Installation
+
+1. Download the [`LiveSplit.BO1ZombiesTrackerSync.dll`](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/tag/v1.3) from the Releases tab.
+2. Place the `.dll` file into your LiveSplit installation folder inside the `Components` directory.
+3. Restart LiveSplit.
+
+---
+
+## Setup Instructions
+
+### 1. Host Player (Server)
+The host is the player whose timer will control the split segments, starts, resets, and layout tracking data.
+
+1. Right-click LiveSplit -> **Edit Layout...** -> Click the **+** button -> **Other** -> **BO1 Zombies Tracker - Timer Sync**.
+2. Double-click the component to open its settings.
+3. Under the **Sync Timer with Host** group:
+   - Set **Sync Mode** to `Host Player (Server)`.
+   - Keep the **Port** as the default `16834`.
+4. Click **OK** to save.
+5. Provide your Radmin VPN or Hamachi IP address to your co-op partner.
 
 > [!WARNING]
-> - **Fast Restart Off-Host**: If host uses a `fast_restart`, the off-host client timer will keep running. To reset and sync properly, host must use `map_restart`.
-> - **Spawn delay**: Off-Host and Host timers will have about a 9-ish second difference on spawn in due to load times. (could change this, add like an option for host players to start when fading in)
-> - **Flogger Timers Off-Host**: Flogger front/back trap timers are included but currently untested. They most likely won't work correctly, for off-host players.
+> *Note: The Host must allow LiveSplit through their Windows Defender Firewall (see the [Troubleshooting](#troubleshooting) section below).*
 
-# [Click Here to Download Enhanced Version v1.1](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.2/BO1.Master.Potato-Jumpy.v1.2.asl)
+---
+
+### 2. Off-Host Player (Client)
+The off-host player's timer will automatically match the Host's timer, split segments, and track custom ASL layout displays.
+
+1. Turn off or deactivate your local Auto Splitter script (Right-click LiveSplit -> **Edit Splits...** -> Click **Deactivate** next to the script).
+2. Right-click LiveSplit -> **Edit Layout...** -> Click the **+** button -> **Other** -> **BO1 Zombies Tracker - Timer Sync**.
+3. Double-click the component to open its settings.
+4. Under the **Sync Timer with Host** group:
+   - Set **Sync Mode** to `Off-Host (Client)`.
+   - In the **VPN Host IP Address** field, enter the **Host's IP address** (the Radmin/Hamachi IP they provided).
+   - Keep the **Port** set to the default `16834`.
+5. Click **OK** to save.
+
+*Your layout will show "Connecting..." until the background thread establishes a connection with the Host. <br>
+Once connected, your active timers and segments will automatically align with the Host's values.*
+
+---
+
+## Troubleshooting
+
+### Windows Firewall Configuration (Host Only)
+Because the Host runs a local TCP server inside LiveSplit, Windows Defender Firewall will block incoming connections by default. The Host must add an exception:
+
+1. Open the Start menu, type **"Allow an app through Windows Firewall"**, and press Enter.
+2. Click **Change settings** in the top right.
+3. Locate **LiveSplit** in the list. Ensure both the **Private** and **Public** checkboxes next to it are checked.
+4. If LiveSplit is not in the list:
+   - Click **Allow another app...** -> **Browse...** -> select your `LiveSplit.exe`.
+   - Click **Add**, then check both **Private** and **Public** boxes.
+5. Click **OK** to save and apply.
+
+---
 
 > [!WARNING]
 > Sometimes, on the first map load, the `roundchange` memory value fails to initialize. When this happens, splits won't trigger because the value is unresponsive.
