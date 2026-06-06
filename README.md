@@ -10,7 +10,7 @@ This Enhanced version adds:
 - Reset Timer
 - Trap Timers
 
-# [Click Here to Download Enhanced Version v1.3](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.2/BO1.Master.Potato-Jumpy.v1.3.asl)
+# [Click Here to Download Enhanced Version v1.4](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.4/BO1.Master.Potato-Jumpy.v1.4.asl)
 
 # BO1 Zombies Tracker & P2P Timer Sync
 
