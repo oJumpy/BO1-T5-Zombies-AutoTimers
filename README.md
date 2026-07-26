@@ -16,7 +16,7 @@ This Enhanced version adds:
 
 A direct `dll` LiveSplit component for Call of Duty: Black Ops 1 Zombies. This component combines Error Monitor Trcaker with Peer-to-Peer (P2P) synchronization. 
 
-It allows co-op players to link their LiveSplit timers with the Host using a VPN (such as Radmin VPN or Hamachi) to synchronize split segments, game timing, and layouts.
+It allows co-op players to link their LiveSplit timers with the Host using a VPN (such as Radmin VPN or Hamachi) to synchronize game timer, round splits, error trackers.
 
 # [DIRECT DOWNLOAD `LiveSplit.BO1ZombiesTrackerSync.dll`](https://github.com/oJumpy/BO1-T5-Zombies-AutoTimers/releases/download/v1.3/LiveSplit.BO1ZombiesTrackerSync.dll)
 
