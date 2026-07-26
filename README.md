@@ -39,7 +39,7 @@ It allows co-op players to link their LiveSplit timers with the Host using a VPN
 ## Setup Instructions
 
 ### 1. Host Player (Server)
-The host is the player whose timer will control the split segments, starts, resets, and layout tracking data.
+The host is the player whose timer will control the game timer, round split, error trackers.
 
 1. Right-click LiveSplit -> **Edit Layout...** -> Click the **+** button -> **Other** -> **BO1 Zombies Tracker - Timer Sync**.
 2. Double-click the component to open its settings.
@@ -55,7 +55,7 @@ The host is the player whose timer will control the split segments, starts, rese
 ---
 
 ### 2. Off-Host Player (Client)
-The off-host player's timer will automatically match the Host's timer, split segments, and track custom ASL layout displays.
+The off-host player's timer will automatically match the Host's game timer, round splits, and track custom ASL layout displays.
 
 1. Turn off or deactivate your local Auto Splitter script (Right-click LiveSplit -> **Edit Splits...** -> Click **Deactivate** next to the script).
 2. Right-click LiveSplit -> **Edit Layout...** -> Click the **+** button -> **Other** -> **BO1 Zombies Tracker - Timer Sync**.
